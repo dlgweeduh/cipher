@@ -1,0 +1,93 @@
+// color variables
+$color1: #f9bb3c;
+$color1transp: rgba(249,187,60, 0.7);
+$color1g: rgba(249,133,49,1);
+$color1f: rgba(255,154,64,1);
+$color1e: rgba(237,182,0,1);
+$color1d: rgba(245,199,15,1);
+$color1c: rgba(251,225,88,1);
+$color1b: rgba(251,236,154,1);
+$color1a: rgba(252,246,194,1);
+
+
+$color2: #31bda5;
+$color2a: rgba(194,252,245,1);
+$color2b:rgba(170,230,223,1);
+$color2c: rgba(80,199,186,1);
+$color2d: rgba(75,179,167,1);
+$color2e: rgba(9,150,134,1);
+$color2f: rgba(12,115,103,1);
+
+$color3: #df4e5e;
+$color3a: rgba(223,78,94, 0.8);
+$colorCTA: #df4e5e;
+$colorCTAdark: #CB293C;
+
+
+
+// secondary variables
+$black: #000;
+$grey50: #FAFAFA;
+$grey300: #E0E0E0;
+$grey400: #BDBDBD;
+$grey600: #9E9E9E;
+$grey700: #616161;
+$darktext: #000000;
+$fast: color 100ms ease;
+$medium: color 200ms ease;
+$slow: color 300ms ease;
+$superslow: color 300ms ease;
+$shadow: rgba(0, 0, 0, 0.26);
+$darkshadow: rgba(0, 0, 0, 0.56);
+
+@mixin textshadowLight($shadow) {
+      text-shadow: 0.5px 0.5px $shadow;
+}
+@mixin textshadowDark {
+      text-shadow: 0.7px 0.7px rgba(0, 0, 0, 0.76);
+}
+
+
+@mixin mdmTrans($medium) {
+            -webkit-transition-timing-function: ease-in-out;
+            transition-timing-function: ease-in-out;
+            -webkit-transition-duration: 200ms;
+            transition-duration: 200ms;
+            -webkit-transition-property: color, border-color, background-color;
+            transition-property: color, border-color, background-color;
+}
+
+
+@mixin bgtrans($fast) {
+            -webkit-transition-timing-function: ease-in-out;
+            transition-timing-function: ease-in-out;
+            -webkit-transition-duration: 100ms;
+            transition-duration: 100ms;
+            -webkit-transition-property: color, border-color, background-color;
+            transition-property: color, border-color, background-color;
+}
+@mixin sprfstTrans($superfast) {
+            -webkit-transition-timing-function: ease-in-out;
+            transition-timing-function: ease-in-out;
+            -webkit-transition-duration: 300ms;
+            transition-duration: 300ms;
+            -webkit-transition-property: color, border-color, background-color;
+            transition-property: color, border-color, background-color;
+}
+@mixin colortrans($slow) {
+            -webkit-transition-timing-function: ease-in-out;
+            transition-timing-function: ease-in-out;
+            -webkit-transition-duration: 300ms;
+            transition-duration: 300ms;
+            -webkit-transition-property: color, border-color, background-color;
+            transition-property: color, border-color, background-color;
+}
+
+@mixin paddingleft($superslow) {
+	-webkit-transition: padding-left 600ms;
+	-moz-transition: padding-left 600ms;
+	-o-transition: padding-left 600ms;
+	-ms-transition: padding-left 600ms;
+	transition: padding-left 600ms;
+}
+

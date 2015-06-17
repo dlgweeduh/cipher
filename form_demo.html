@@ -1,0 +1,27 @@
+  <!-- join Form -->
+  <style>
+  tr { height: 24px; }
+    td.label { text-align: right; padding-right: 10px; font-size: 14px; }
+    input[type="text"] {  width: 275px; height: 18px; }
+    td.submit { text-align: right; }
+  </style>
+  <form name="join_form" action="../../add_join" method="put">
+    <table>
+  	  <tr>
+  	  	<td class="label">Full Name</td>
+  	  	<td class="input"><input type="text" ng-model="name_full" name="name_full" placeholder="First Last" /></td>
+  	  </tr>
+  	  <tr>
+  	  	<td class="label">Email</td>
+  	  	<td class="input"><input type="text" name="email" placeholder="Address" /></td>
+  	  </tr>
+  	  <tr>
+  	  	<td class="label">Social</td>
+  	  	<td class="input"><input type="text" name="social" placeholder="Twitter / Tumblr / Facebook Link" /></td>
+  	  </tr>
+  	  <tr>
+  	  	<td class="label"></td>
+  	  	<td class="submit"><input type="submit" value="join the cipher"></td>
+  	  </tr>
+  	</table>
+  </form>
