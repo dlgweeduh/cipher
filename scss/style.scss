@@ -241,6 +241,30 @@ sub {
     bottom: -0.25em
 }
 
+#days {
+  font-size: 200px;
+  color: #db4844;
+}
+#hours {
+  font-size: 150px;
+  color: #f07c22;
+}
+#minutes {
+  font-size: 100px;
+  color: #f6da74;
+}
+#seconds {
+  font-size: 50px;
+  color: #abcd58;
+}
+
+.countdown {
+  display: inline-block;
+  line-height: 1;
+  padding: 20px;
+  font-size: 40px;
+}
+
 /* ==========================================================================
 Lists
 ========================================================================== */
@@ -475,7 +499,7 @@ a:hover, a:focus {
     left: 0px;
     width: 100%;
     height: 100%;
-    background-image: url(../img/grid.png);
+    background-image: url(../pics/grid.png);
 }
 .header {
       position: relative;
@@ -874,18 +898,18 @@ Hero
     position: relative;
     padding: 60px 0 60px 0;
     min-height: 800px;
-    background: $color2 url("../img/conesusdawn.jpg") no-repeat center center;
+    background: $color2 url("../pics/conesusdawn.jpg") no-repeat center center;
     background-size: cover;
     color: #fff; 
     // background-position: 0 -100px;
     @include textshadowDark;
         &.about {
-        background: #009ba3 url("../img/tahoedawn.jpg") no-repeat center center;       
+        background: #009ba3 url("../pics/tahoedawn.jpg") no-repeat center center;       
         background-size: cover;
         background-position: 30% 0;
     }
             &.circles {
-        background: #009ba3 url("../img/windfarmdawn.jpg") no-repeat center center;       
+        background: #009ba3 url("../pics/windfarmdawn.jpg") no-repeat center center;       
         background-size: cover;
         background-position: 90% 0;        
     }
@@ -959,11 +983,11 @@ section.separator {
       color: $color1;
     }
     &.circles {
-      background: url("../img/circleBg1.png");
+      background: url("../pics/circleBg1.png");
       background-color: $color2;
     }
     &.circles2 {
-      background: url("../img/circleBg2.png");
+      background: url("../pics/circleBg2.png");
       background-color: $color1;
       &.circles2a {
         background-color: $color2a;
@@ -976,7 +1000,7 @@ section.separator {
       }            
     }
     &.circles2side {
-      background: url("../img/circleBg3a.png");
+      background: url("../pics/circleBg3a.png");
       background-color: $color1;
       background-position: 40% 0;
       span {
@@ -996,11 +1020,11 @@ section.separator {
       }            
     }
     &.circles3 {
-      background: url("../img/circleBg3.png");
+      background: url("../pics/circleBg3.png");
       background-color: $color3;
     } 
     &.circles4 {
-      background: url("../img/circleBg4.png");
+      background: url("../pics/circleBg4.png");
       background-color: $color1;
     }    
     // &.red {
@@ -1070,7 +1094,7 @@ Features Slider
 .features-bg {
     position: relative;
     min-height: 400px;
-    background: url("../img/features-intro-01.jpg") no-repeat center center;
+    background: url("../pics/features-intro-01.jpg") no-repeat center center;
     background-size: cover; }
 
 .features-img {
@@ -1160,12 +1184,12 @@ Separatorz
         background-color: $color2;
         color: $darktext;
         @include bgtrans($fast);
-        background: $color2 url("../img/circleBg3a.png");
+        background: $color2 url("../pics/circleBg3a.png");
         background-position: 40% 0;
         background-size: cover;
         @include textshadowLight($shadow);
         // .screenshot {
-        //   background-image: url("../img/vidShot.png");
+        //   background-image: url("../pics/vidShot.png");
         //   z-index: 1000;
         //   width: 300px;
         //   position: relative;
@@ -1304,15 +1328,15 @@ blockquote .logo-quote {
 Showcase
 ========================================================================== */
 .showcase {
-    background: url("../img/conesusdusk.jpg") no-repeat center center fixed;
+    background: url("../pics/conesusdusk.jpg") no-repeat center center fixed;
     background-size: cover; 
     &.about {
-        background: url("../img/tahoedusk.jpg") no-repeat center center fixed;
+        background: url("../pics/tahoedusk.jpg") no-repeat center center fixed;
         background-size: cover; 
         background-position: 30% 0;
     }
     &.circles {
-        background: url("../img/windfarmdusk.jpg") no-repeat center center fixed;
+        background: url("../pics/windfarmdusk.jpg") no-repeat center center fixed;
         background-size: cover; 
         background-position: 90% 0;        
     }    
@@ -1334,7 +1358,7 @@ Showcase
     left: 20%;
     min-height: 676px;
     width: 359px;
-    background: url("../img/iphone-skeleton.png") no-repeat center center; }
+    background: url("../pics/iphone-skeleton.png") no-repeat center center; }
 
 .device-content {
     position: absolute;
@@ -1389,7 +1413,7 @@ Profiles
 }
 
 /*~~I Want Pics*/
-.profilePic {
+.profile_pic {
   display: inline-block;
   overflow: hidden;
   overflow-x: hidden;
@@ -1401,7 +1425,7 @@ Profiles
     display: block;
   }
 }
-.profilePic:hover, .profilePic:focus {
+.profile_pic:hover, .profile_pic:focus {
   border: 0;
   border-top-color: initial;
   border-top-style: initial;
@@ -1416,15 +1440,15 @@ Profiles
   border-left-style: initial;
   border-left-width: 0px;
 }
-.profilePic:hover img, .profilePic:focus img {
+.profile_pic:hover img, .profile_pic:focus img {
   position: relative;
   top: -205px;
 }
-.profilePic.person  {
+.profile_pic.person  {
   height: 255px;
   display: block;
 }
-.profilePic.person:hover img, .profilePic.person:focus img {
+.profile_pic.person:hover img, .profile_pic.person:focus img {
   position: relative;
   top: -255px;
 }
@@ -1763,8 +1787,6 @@ Nav Overlay
     opacity: 1;
     -webkit-transform: translate3d(0, 0, 0);
     transform: translate3d(0, 0, 0); 
-}
-.nav_slide_button {
 }
 
 /* ==========================================================================
