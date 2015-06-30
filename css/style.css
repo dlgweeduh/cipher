@@ -494,6 +494,8 @@ a:hover, a:focus {
     margin: 1.5rem auto; }
   .header.white h1 {
     color: #FAFAFA; }
+  .header.spacer {
+    margin-top: 25px; }
 
 .bold {
   font-family: "gothamRdBold", sans-serif; }
@@ -501,6 +503,9 @@ a:hover, a:focus {
 .center {
   margin: 0 auto;
   text-align: center; }
+
+.color3 {
+  color: #df4e5e; }
 
 /* Button */
 .button {
@@ -954,6 +959,15 @@ section.video a:hover i, section.video a:focus i {
 /* ==========================================================================
 Sections
 ========================================================================== */
+#map {
+  background: #31bda5;
+  padding: 0; }
+
+/* Google Map */
+#map_canvas {
+  width: 100%;
+  height: 400px; }
+
 /* ==========================================================================
 Custom Slider Controls (Flickity)
 ========================================================================== */
@@ -1294,8 +1308,11 @@ Profiles
   top: -255px; }
 
 .socialIcon {
-  width: 50px;
-  margin: 15px; }
+  width: 40px;
+  margin: 15px 15px 15px 25px; }
+
+.social_icon_wrap {
+  margin: 0 auto; }
 
 /* ==========================================================================
 Screenshots

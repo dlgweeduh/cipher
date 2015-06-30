@@ -69,7 +69,19 @@
     box-shadow: 0 0 0 0 transparent; }
 
   .team_section {
-    background-color: #FAFAFA; } }
+    background-color: #FAFAFA; }
+
+  .showcase {
+    background: url("../pics/conesusdusk.jpg") no-repeat center center;
+    background-size: cover; }
+    .showcase.about {
+      background: url("../pics/tahoedusk.jpg") no-repeat center center;
+      background-size: cover;
+      background-position: 30% 0; }
+    .showcase.circles {
+      background: url("../pics/windfarmdusk.jpg") no-repeat center center;
+      background-size: cover;
+      background-position: 90% 0; } }
 @media screen and (max-width: 991px) and (max-width: 465px) {
   .hero-content h1 {
     font-size: 60px;
