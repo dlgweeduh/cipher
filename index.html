@@ -1,0 +1,393 @@
+<!DOCTYPE html> 
+<html lang="en" class="no-js" ng-app="app" ng-controller="appCtrl">  
+<head>
+  <meta charset="UTF-8">
+  <title>Cipher | Your Local Code Community</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="" /> <!-- Work on -->
+
+<script src="js/modernizr.custom.js"></script>
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<link href="css/jquery.fancybox.css" rel="stylesheet">
+<link href="css/flickity.css" rel="stylesheet" >
+<link href="css/animate.css" rel="stylesheet">
+<!-- Bootstrap -->
+<link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+<link href='http://fonts.googleapis.com/css?family=Shadows+Into+Light+Two' rel='stylesheet' type='text/css'>
+<link href="css/style.css" rel="stylesheet">
+<link href="css/queries.css" rel="stylesheet">
+<link rel="import" href="https://www.polymer-project.org/0.5/components/paper-ripple/paper-ripple.html">
+<link rel="import" href="http://www.polymer-project.org/components/core-icons/core-icons.html">		
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+<!-- <script src="angular.js"></script> -->
+
+<script>
+//   var cipher = angular.module("app", [],
+//     function($interpolateProvider) {
+// 	  $interpolateProvider.startSymbol('[!');
+// 	    $interpolateProvider.endSymbol('!]');
+	
+// 	}) ///
+//    cipher.controller('appCtrl', function($scope) {
+//    	  $scope.backdrop = 'off';
+// 	  $scope.modal_video = 'off';
+// 	  $scope.modal_join = 'off';
+// 	  $scope.modal_mentor = 'off';
+// 	  $scope.modal_sponsor = 'off';
+// 	  $scope.modal_lineup = 'off';
+
+// 	}) ///
+// </script>
+</head>
+
+<body>
+		<!--[if lt IE 7]>
+		<p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+		<![endif]-->
+
+<header>
+	<section class="hero">
+  <div class="texture-overlay"></div>
+    <div class="heroContent">
+    	<div class="container">
+      <div class="row nav-wrapper">
+        <div class="col-md-6 col-sm-6 col-xs-6 text-left">
+            <a href="index.html"><img id="logo" src="pics/cipherLogoFinal.png" alt="Cipher Logo"></a>
+          </div> <!-- - end Logo div -->
+        <div class="col-md-6 col-sm-6 col-xs-6 text-right navicon">
+          	<h3>MENU</h3><a id="trigger-overlay" class="nav_slide_button nav-toggle" href="#"><span></span></a>
+        </div>
+      </div>
+      <div class="row hero-content">
+				<div class="col-md-12">
+					<h1 class="animated fadeInDown">cipher</h1>
+						<h2 class="animated fadeInUp">your local <b>kickass</b> code community</h2>
+						<a href="about.html" class="learn-btn animated fadeInUp">apply<paper-ripple fit></paper-ripple></a>
+        </div>
+      </div><!-- -/ row -->
+			</div><!-- - / container -->
+		</div> <!-- - / heroContent -->
+	</section>
+</header>
+
+<a href="http://projectcipher.io.s3.amazonaws.com/cipher v2.mp4" class="youtube-media">		
+  <section class="separator heatSpot" id="about">
+    <div class="container">
+    <div class="row">
+      <div class="col-md-8 col-md-offset-2 text-center">
+          <h2>learn what cipher will do for you</h2>
+						<div id="overlay">
+							<div class="screenshot">
+	          		<img class="animated pulse infinite" id="screenshot" src="pics/vidShot3	.jpg">
+							</div>
+						</div>
+            <h1><i class="fa fa-hand-o-right"></i> take the tour</h1>							
+      </div>
+    </div><!-- - / row -->
+    </div>
+  </section>
+</a>
+<section class="features-list grey50" id="features">
+	<div class="container">
+  <div class="row">
+  <div class="col-md-4 feature-1 wp2">
+        <div class="feature-content">
+          <h1 class="">imagine learning to code in a social, inspiring, competitive atmosphere. <br><br><span class="bold">that's cipher.</span></h1>
+        </div>
+    </div>
+		<div class="col-md-8 feature-3 wp2 delay-1s">
+				<div class="feature-content cipherPpl">
+				<img src="pics/girl1.svg" class="first3rd">
+				<img src="pics/code.svg">	
+				<img src="pics/dude2.svg">
+				<img src="pics/moustache.svg" class="third3rd">
+				<img src="pics/dude1.svg" class="second3rd">
+				<img src="pics/dude3.svg" class="second3rd">
+				<img src="pics/robot.svg" class="third3rd">
+				<img src="pics/girl4.svg">
+				<img src="pics/pageLayout.svg" class="first3rd">	
+				<img src="pics/girl2.svg" class="second3rd">
+				<img src="pics/astro.svg" class="second3rd">
+				<img src="pics/puzzle.svg">
+				<img src="pics/girl3.svg">
+				<img src="pics/console.svg">	
+				<img src="pics/codeninja.svg" class="first3rd">
+        </div>
+    </div>
+  </div><!-- end row -->
+  </div><!-- / end container div-->
+</section> <!-- / features -->
+
+<section class="separator circles3" id="about">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-10 col-md-offset-1 text-center">
+				<h3>"This gorgeous quote section is up for auction! You're an awesome company that does awesome things, and you want to <b>show</b> young people your awesome-ness -- so why not sponsor young coders?! You'd be our <s>star</s> <u>hero</u> &hearts;. Read our <a href=""> sponsorship package</a> to see rates &amp; details!"</h3>
+				<h2><span class="yellow"><b>Mark Zuckerberg? </b></span>- Founder, <b>A Tech Success Story</b> </h3>
+			</div><!-- -/ col - -->
+		</div><!-- -/ row - -->
+	</div><!-- -/ container - -->
+</section><!-- -/separator - -->
+
+<section class="features-list grey50" id="features">
+  <div class="container">
+  <div class="row">
+		<div class="col-md-6">
+				<div class="header">				
+					<h1>what it's like:</h1>
+				</div>
+    </div>					
+  </div><!-- -/ row - -->
+<div class="row">
+	<div class="col-md-5 col-md-offset-1 feature-1 wp2">
+	  <div class="description">
+	    <h3 class="">you have the drive, ability and smarts to be a changemaker, we just want to help make it happen.</h3>
+	    <p class="">learning to code is a lot like learning how to play guitar, how to swim, or how to shoot a dirty three-pointer: it's gotta be done with peers, in a healthy environment. when you're in a cipher circle, you progress together with your friends and with the help of some code-rockstar-heros from your community.</p>
+	      <span class="button_wrap">
+	        <a href="" class="use-btn animated fadeInUp">
+	          <div ng-click="modal_join='on'">join a circle<paper-ripple fit></paper-ripple>
+		        </div>
+		      </a><!-- - /button - -->
+			    <a href="about.html" class="learn-btn animated fadeInUp">
+			      <div ng-click="showForm_mentor()">be a hero<paper-ripple fit></paper-ripple></div>
+			</a><!-- - /button - -->
+	  </span><!-- - /button_wrap - -->
+	  </div><!-- - /description - -->
+	</div><!-- - /col - -->						
+	<div class="col-md-6 feature-3 wp2 delay-1s">
+		<div class="cipherdemo">
+			<img class="" src="pics/cipherdemoBlack.png">
+		</div>
+	</div><!-- -/col - -->										
+</div><!-- -/row -->
+	</div>
+</section>
+
+<section class="showcase">
+	<div class="showcase-wrap">
+		<div class="texture-overlay">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-5">
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<section class="features-list" id="features">
+	<div class="container">
+		<div class="row">
+				<div class="col-md-6 col-md-offset-3">
+					<div class="header">				
+						<h1>...um... it's like:</h1>
+					</div>
+				</div>					
+		</div>
+		<div class="row">					
+				<div class="col-md-6 feature-3 wp2 delay-1s">
+					<div class="cipherdemo">
+						<img class="" src="pics/cipherGrowB.png">
+					</div>
+				</div>										
+				<div class="col-md-5 col-md-offset-1 feature-1 wp2">
+					<div class="description">
+						<h3 class="">cipher is the <i>first</i> of it's kind. here, you're part of an innovative way to learn &amp; grow.</h3>
+						<p class="">it's an unfortunate reality that schools can't keep up with the rate of change in technology. you are simply not getting the mentorship and skill-building you need to be a changemaker in 2015. with cipher, you will transform from being a consumer of technology to a straight-up maker of magic.</p>
+						<a href="" class="use-btn animated fadeInUp">get our curriculum &amp; resources<paper-ripple fit></paper-ripple></a> 
+						<!-- <a href="about.html" class="learn-btn animated fadeInUp">lead one of our circles<paper-ripple fit></paper-ripple></a>							 -->
+					</div>
+				</div>								
+		</div>
+	</div>
+</section>
+
+
+<section class="separator circles4" id="download">
+  <div class="container">
+  <div class="row">
+    <div class="col-md-8 col-md-offset-2 text-center wp4">
+      <h2>Accepting Applications &amp; Sponsorship</h2><br>
+        <a href="" class="use-btn animated fadeInUp">apply to be one of 25 changemakers<paper-ripple fit></paper-ripple></a> 
+        <a href="about.html" class="learn-btn animated fadeInUp">sponsor young coders<paper-ripple fit></paper-ripple></a>	
+        <br>
+        <h2>for our 2015 Season until <b>July 17</b> </h2>
+    </div>
+  </div><!-- - / row - -->
+  </div><!-- - / container - -->
+</section> <!-- -/ separator - -->
+
+  <div class="container footer_cta">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">	
+      <img id="footerLogo" src="pics/cipherLogoBigOG.png" alt="Cipher Logo">
+      <h2>we're on a mission to make coding education universal, free &amp; life-changing.</h2>
+    </div>
+  </div><!-- - row - -->
+  </div><!-- - container -->
+
+<div class="form">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-8 col-md-offset-2">
+				<div class="form_wrapper">
+						<h2>Wanna win 1 of 25 kickass Cipher T-Shirts?</h2>
+					<form class="form-inline">
+					<div class="form-group">
+					<input type="email" class="form-control" id="exampleInputName2" placeholder="Email">
+					</div>
+					<div class="form-group">
+					<input type="name" class="form-control" id="exampleInputEmail2" placeholder="High School">
+					</div>
+					<a type="submit" class="learn-btn form-btn">Subscribe</a>
+					</form>
+					<h3>Subscribe to our Mailing List by <b>July 15 @ 6pm!</b></h3>
+				</div> <!-- - / inner wrapper -->					
+			</div><!-- - / col -->	
+	</div><!-- / row -->
+</div> <!-- - / container -->
+</div> <!-- - / form -->
+
+<footer class="grey50">
+<div class="container">
+<div class="row">
+	<div class="col-md-6">
+		<div class="socialIcons">
+			<a href="https://facebook.com/projectcipher"><img src="pics/icons/facebook.png"></a>
+			<a href="https://twitter.com/projectcipher"><img src="pics/icons/twitter.png"></a>
+			<a href="https://instagram.com/projectcipher"><img src="pics/icons/insta.png"></a>
+		</div>
+	</div><!-- - /col -->
+  <div class="col-md-6">
+	  <ul class="footer-nav">
+      <li><a href="index.html">home</a></li>        
+      <li><a href="about.html">community</a></li>
+      <li><a href="circles.html">circles</a></li>
+	  </ul>
+  </div><!-- -/ col - -->
+	<div class="row">
+		<div class="col-md-12">
+			<p><a href=""></a> Handcrafted with &hearts; by Cipher©</a><br>Backgrounds by<a href="http://www.alexpasquarella.com/"> Alex</a></a></p>
+		</div>
+	</div> <!-- end row -->
+</div><!-- -/ row - -->
+</div><!-- -/ container - -->
+</footer><!-- -/ footer - -->
+
+<div class="overlay nav-overlay">
+	<nav>
+		<ul>
+			<li><a href="index.html"><i class="fa fa-code"></i>cipher<paper-ripple fit></paper-ripple></a></li>					
+			<li><a href="about.html" class="two"><i class="fa fa-gears"></i>community<paper-ripple fit></paper-ripple></a></li>
+		</ul>
+		<ul>
+			<li><a href="circles.html" class="three"><i class="fa fa-circle-thin"></i>circles<paper-ripple fit></paper-ripple></a></li>				
+		</ul>
+	</nav>
+</div>
+<!-- - ||||||| Modals - -->
+<!-- 
+<style>
+.backdrop { position: fixed; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(49,189,165, 0.8); }
+.close_modal {position: fixed; top: 25px; left: 25px; z-index: 1000; padding: 10px; }
+</style>
+<div class="backdrop" ng-show="modal_join=='on'">
+	<div class="close_modal" ng-click="modal_join=='off'">close</div>
+</div>
+
+<div class="modal_video" ng-show="modal_video=='on'">
+  modal_video
+  <form>
+  	<table>
+  		<tr>
+  			<td class="label"></td>
+  			<td class="input"></td>
+  		</tr>
+  	</table>
+  </form>
+
+
+</div> -->
+<!-- - /modal_video - -->
+
+  <!-- join Form -->
+<!-- 
+<style>
+.modal_wrap { position: fixed; top: 25%; }
+.modal_html { width: 600px; margin: 0 auto; background-color: rgba(0,0,0,.5); padding: 25px;  border: 1px solid #222; }
+  tr { height: 24px; }
+  td.label { text-align: right; padding-right: 10px; font-size: 14px; }
+  input[type="text"] {  width: 275px; height: 18px; }
+  td.submit { text-align: right; }
+</style>
+
+<div class="modal_wrap" ng-show="modal_join=='on'">
+	<div class="modal_html">
+		
+  <form name="join_form" action="../../add_join" method="put">
+    <table>
+  	  <tr>
+  	  	<td class="label">Full Name</td>
+  	  	<td class="input"><input type="text" ng-model="name_full" name="name_full" placeholder="First Last" /></td>
+  	  </tr>
+  	  <tr>
+  	  	<td class="label">Email</td>
+  	  	<td class="input"><input type="text" name="email" placeholder="Address" /></td>
+  	  </tr>
+  	  <tr>
+  	  	<td class="label">Social</td>
+  	  	<td class="input"><input type="text" name="social" placeholder="Twitter / Tumblr / Facebook Link" /></td>
+  	  </tr>
+  	  <tr>
+  	  	<td class="label"></td>
+  	  	<td class="submit"><input type="submit" value="join the cipher"></td>
+  	  </tr>
+  	</table>
+  </form>
+</div>  
+</div>  -->
+<!-- - /modal_join - -->
+
+<!-- <div class="modal_mentor" ng-show="modal_mentor=='on'">
+  modal_mentor
+
+   <form>
+
+  </form>
+
+</div>  --><!-- - /modal_mentor - -->
+
+<div class="modal_sponsor" ng-show="modal_sponsor=='on'">
+  <!-- modal_sponsor -->
+
+</div><!-- - /modal_sponsor - -->
+
+<div class="modal_lineup" ng-show="modal_lineup=='on'">
+  <!-- modal_lineup -->
+
+</div> <!-- - /modal_lineup - -->
+
+		<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+		<script src="js/min/toucheffects-min.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+		<script src="js/flickity.pkgd.min.js"></script>
+		<script src="js/jquery.fancybox.pack.js"></script>
+		<!-- Include all compiled plugins (below), or include individual files as needed -->
+		<script src="js/retina.js"></script>
+		<script src="js/waypoints.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<script src="js/scripts.js"></script>
+		<script type="text/javascript" src="js/fullsize.js"></script>
+		<script>
+		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+		ga('create', 'UA-63547682-1', 'auto');
+		ga('send', 'pageview');
+
+		</script>
+	</body>
+</html>
