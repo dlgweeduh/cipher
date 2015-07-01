@@ -1630,6 +1630,25 @@ Nav Overlay
   -webkit-transform: translate3d(0, 0, 0);
   transform: translate3d(0, 0, 0); }
 
+.campfire {
+  position: fixed;
+  right: 0;
+  top: 45%;
+  width: 175px;
+  height: 64px;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  color: #fff;
+  overflow: hidden;
+  transition: box-shadow 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+  transition-delay: 0.2s;
+  box-shadow: 0 7px 10px 0 rgba(0, 0, 0, 0.26);
+  background-color: #d23f31; }
+  .campfire h3 {
+    line-height: 22px;
+    float: right;
+    margin-right: 3px; }
+
 /* ==========================================================================
 Waypoints
 ========================================================================== */
