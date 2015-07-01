@@ -512,6 +512,11 @@ a:hover, a:focus {
         font-size: 5em;
         margin: 1.5rem auto;
     }
+    h2 {
+    font-family: $secondaryfont;
+    font-size: 3em;
+    margin: 0.5rem auto;
+    }
     &.white h1{
       color: $grey50;
     }
@@ -1249,6 +1254,9 @@ Features List
 ========================================================================== */
 .features-list {
     padding: 130px 0;
+    &.shorter {
+      padding: 60px 0;
+    }
     &.grey50 {
         background-color: $grey50;
     }
@@ -1584,7 +1592,20 @@ footer p {
     margin: 100px 0 0 0; }
 
 footer ul {
-    margin-top: 30px; }
+}
+.footer-nav a {
+  color: $color1;
+}
+.footer-nav a:hover {
+  color: $color2;
+}
+.footer-nav span i {
+  font-size: 10px;
+  line-height: 12px;
+  vertical-align: middle;
+  padding-right: 5px;
+  color: $color2;
+}
 
 footer li {
     float: left;
