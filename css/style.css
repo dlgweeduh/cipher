@@ -378,7 +378,8 @@ input[type="reset"], input[type="submit"] {
   cursor: pointer;
   /* 3 */
   *overflow: visible;
-  /* 4 */ }
+  /* 4 */
+  line-height: 2px; }
 
 /*
 * Re-set default cursor for disabled elements.
@@ -701,6 +702,23 @@ Buttons
   transition-delay: 0.2s;
   box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
   cursor: pointer; }
+  .use-btn.typeform-share .bttn {
+    display: inline-block;
+    padding: 20px 50px;
+    border-radius: 2px;
+    color: #fff;
+    background-color: #31bda5;
+    font-size: 16px;
+    transition: box-shadow 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+    transition-delay: 0.2s;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
+    cursor: pointer; }
+    .use-btn.typeform-share .bttn:hover, .use-btn.typeform-share .bttn:focus, .use-btn.typeform-share .bttn:active {
+      background-color: #4bb3a7;
+      color: white;
+      text-decoration: none;
+      box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2);
+      transition-delay: 0s; }
   .use-btn:hover, .use-btn:focus, .use-btn:active {
     background-color: #4bb3a7;
     color: white;
@@ -728,6 +746,17 @@ Buttons
   transition-delay: 0.2s;
   box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
   cursor: pointer; }
+  .learn-btn.typeform-share .bttn, .download-btn.typeform-share .bttn {
+    display: inline-block;
+    padding: 20px 50px;
+    border-radius: 2px;
+    color: #fff;
+    background-color: #df4e5e;
+    font-size: 16px;
+    transition: box-shadow 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+    transition-delay: 0.2s;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
+    cursor: pointer; }
   .learn-btn.orange, .download-btn.orange {
     background-color: #f9bb3c; }
   .learn-btn.form-btn, .download-btn.form-btn {
@@ -1542,6 +1571,13 @@ form {
   height: 42px;
   padding: 6px 12px;
   font-size: 18px; }
+
+form input {
+  height: 35px;
+  width: 200px;
+  display: inline-block;
+  float: left;
+  margin: 10px 19px 29px 19px; }
 
 .form {
   height: 100%;
