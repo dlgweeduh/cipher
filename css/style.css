@@ -993,7 +993,8 @@ section {
   box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.24); }
 
 .about_us {
-  background-color: #F5F5F5; }
+  background-color: #F5F5F5;
+  padding: 50px 0 50px 0; }
   .about_us .card, .about_us .dialog {
     position: relative;
     display: inline-block;
