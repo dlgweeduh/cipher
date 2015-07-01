@@ -974,6 +974,14 @@ Sections
   background: #31bda5;
   padding: 0; }
 
+#map_wrapper {
+  -webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.24);
+  -moz-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.24);
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.24);
+  height: 100%;
+  width: 100%;
+  box-shadow: 0 12px 15px 0 rgba(0, 0, 0, 0.24); }
+
 /* Google Map */
 #map_canvas {
   width: 100%;
@@ -983,6 +991,27 @@ section {
   -webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.24);
   -moz-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.24);
   box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.24); }
+
+.about_us {
+  background-color: #F5F5F5; }
+  .about_us .card, .about_us .dialog {
+    position: relative;
+    display: inline-block;
+    max-width: 100%;
+    vertical-align: top;
+    background-color: #fff;
+    box-shadow: 0 12px 15px 0 rgba(0, 0, 0, 0.24);
+    margin: 2rem 1rem; }
+  .about_us .header h2 {
+    font-size: 4rem; }
+  .about_us.lightgreyBg {
+    background-color: #FAFAFA; }
+  .about_us img {
+    margin: 2rem;
+    display: inline-block;
+    max-width: 90%; }
+  .about_us .large_p h2 {
+    font-size: 2.1rem; }
 
 /* ==========================================================================
 Custom Slider Controls (Flickity)
@@ -1633,7 +1662,7 @@ Nav Overlay
 .campfire {
   position: fixed;
   right: 0;
-  top: 45%;
+  top: 25%;
   width: 175px;
   height: 64px;
   border-top-left-radius: 20px;
