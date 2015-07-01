@@ -507,11 +507,13 @@ a:hover, a:focus {
       display: inline-block;
       min-height: 100px;
       vertical-align: top;
-      margin: 2em;
+      margin: 1em 0 2.5em 0;
+      text-align: center;
     h1 {
         font-family: $secondaryfont;
         font-size: 5em;
-        margin: 1.5rem auto;
+        margin: 1.5rem 0 2rem 0;
+        text-align: center;
         text-shadow: 0.4px 0.4px rgba(0, 0, 0, 0.46);
 
     }
@@ -1145,6 +1147,13 @@ section {
         font-size: 2.1rem;
       }
     }  
+}
+.circles_intro {
+  padding: 100px 0 100px 0;
+  img {
+    width: 100%;
+    margin: 50px 0 0 0;
+  }
 }
 
 /* ==========================================================================
