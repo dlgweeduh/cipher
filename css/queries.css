@@ -81,7 +81,10 @@
     .showcase.circles {
       background: url("../pics/windfarmdusk.jpg") no-repeat center center;
       background-size: cover;
-      background-position: 90% 0; } }
+      background-position: 90% 0; }
+
+  .campfire {
+    display: none; } }
 @media screen and (max-width: 991px) and (max-width: 465px) {
   .hero-content h1 {
     font-size: 60px;
