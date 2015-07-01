@@ -493,6 +493,7 @@ a:hover, a:focus {
     color: $color1;
     text-decoration: none;
 }
+
 .texture-overlay {
     position: absolute;
     top: 0px;
@@ -511,11 +512,14 @@ a:hover, a:focus {
         font-family: $secondaryfont;
         font-size: 5em;
         margin: 1.5rem auto;
+        text-shadow: 0.4px 0.4px rgba(0, 0, 0, 0.46);
+
     }
     h2 {
     font-family: $secondaryfont;
     font-size: 3em;
     margin: 0.5rem auto;
+    text-shadow: 0.4px 0.4px rgba(0, 0, 0, 0.46);
     }
     &.white h1{
       color: $grey50;
@@ -523,6 +527,10 @@ a:hover, a:focus {
     &.spacer {
       margin-top: 25px;
     }
+    i {
+      color: $color1;
+      text-shadow: 0.7px 0.7px rgba(0, 0, 0, 0.76) !important;
+    }    
 }
 
 .bold {
@@ -535,6 +543,9 @@ a:hover, a:focus {
 
 .color3 {
   color: $color3;
+  &:hover a {
+    color: $colorCTAdark;
+  }
 }
 
     
@@ -1007,7 +1018,7 @@ section.separator {
         background-color: $color2b;        
       }
       &.circles2c {
-        background-color: $color2c;
+        background-color: $color2d;
       }            
     }
     &.circles2side {
@@ -1088,7 +1099,11 @@ Sections
   width: 100%;
   height: 400px; }
 
-
+section {
+    -webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.24);
+     -moz-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.24);
+          box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.24);
+}
 
 /* ==========================================================================
 Custom Slider Controls (Flickity)
@@ -1175,7 +1190,7 @@ Features Slider
         padding: 2rem 0 3rem 0;
     }    
     ul {
-      margin: 5rem auto;
+      margin: 3rem 0 3rem 2rem;
     }
     li {
       font-size: 2rem;
@@ -1269,11 +1284,8 @@ Features List
     &.grey600 {
       background-color: $grey600;
     }
-    &.lightGreen {
+    &.color2a {
       background-color: $color2a;
-    }
-    &.medGreen {
-      background-color: $color2c;
     }
     padding: 130px 0; }
 .features-list.lightgreyBG {
@@ -1283,6 +1295,8 @@ Features List
     margin: 0 0 10px 0;
     padding: 0;
 }
+
+
 
 .features-list p {
     margin-bottom: 20px;
@@ -1300,6 +1314,7 @@ Features List
 .cipherdemo img{
     width: 100%;
     display: inline-block;
+    margin: 1.5 rem auto;
 }
 
 .feature-icon {
@@ -1584,6 +1599,10 @@ Footer
 ========================================================================== */
 footer {
     padding: 20px 0; 
+    background-color: $grey50;
+    box-shadow: 16px 0px 0px  0px rgba(50, 50, 50, 0.3);
+    width: 100%;  
+    display: block;
   }
 
 footer p {
@@ -1611,7 +1630,8 @@ footer li {
     float: left;
     padding-top: 80px;    
     margin-right: 5%;
-    font-size: 16px;
+    font-size: 20px;
+    line-height: 40px;
     list-style: none;
     text-transform: uppercase;
     font-weight: 400; }
@@ -1631,6 +1651,9 @@ footer li:last-child {
     h2 {
         margin: 2rem 0 0 0;
         text-align: center;
+    }
+    &.circles {
+      margin-bottom: 30px;
     }
 }
 footer .socialIcons {

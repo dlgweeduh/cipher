@@ -491,15 +491,20 @@ a:hover, a:focus {
   .header h1 {
     font-family: "dkcrayon", sans-serif;
     font-size: 5em;
-    margin: 1.5rem auto; }
+    margin: 1.5rem auto;
+    text-shadow: 0.4px 0.4px rgba(0, 0, 0, 0.46); }
   .header h2 {
     font-family: "dkcrayon", sans-serif;
     font-size: 3em;
-    margin: 0.5rem auto; }
+    margin: 0.5rem auto;
+    text-shadow: 0.4px 0.4px rgba(0, 0, 0, 0.46); }
   .header.white h1 {
     color: #FAFAFA; }
   .header.spacer {
     margin-top: 25px; }
+  .header i {
+    color: #f9bb3c;
+    text-shadow: 0.7px 0.7px rgba(0, 0, 0, 0.76) !important; }
 
 .bold {
   font-family: "gothamRdBold", sans-serif; }
@@ -510,6 +515,8 @@ a:hover, a:focus {
 
 .color3 {
   color: #df4e5e; }
+  .color3:hover a {
+    color: #CB293C; }
 
 /* Button */
 .button {
@@ -911,7 +918,7 @@ section.separator {
     section.separator.circles2.circles2b {
       background-color: #aae6df; }
     section.separator.circles2.circles2c {
-      background-color: #50c7ba; }
+      background-color: #4bb3a7; }
   section.separator.circles2side {
     background: url("../pics/circleBg3a.png");
     background-color: #f9bb3c;
@@ -925,7 +932,7 @@ section.separator {
       background-color: #edb600;
       background-position: 30% 0; }
     section.separator.circles2side.circles3c {
-      background-color: #ff9a40;
+      background-color: rgba(255, 154, 64, 0.9);
       background-position: 50% 0; }
   section.separator.circles3 {
     background: url("../pics/circleBg3.png");
@@ -971,6 +978,11 @@ Sections
 #map_canvas {
   width: 100%;
   height: 400px; }
+
+section {
+  -webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.24);
+  -moz-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.24);
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.24); }
 
 /* ==========================================================================
 Custom Slider Controls (Flickity)
@@ -1053,7 +1065,7 @@ Features Slider
   .description.left {
     padding: 2rem 0 3rem 0; }
   .description ul {
-    margin: 5rem auto; }
+    margin: 3rem 0 3rem 2rem; }
   .description li {
     font-size: 2rem; }
 
@@ -1123,10 +1135,8 @@ Features List
     background-color: #616161; }
   .features-list.grey600 {
     background-color: #9E9E9E; }
-  .features-list.lightGreen {
+  .features-list.color2a {
     background-color: #c2fcf5; }
-  .features-list.medGreen {
-    background-color: #50c7ba; }
 
 .features-list.lightgreyBG {
   background-color: black; }
@@ -1148,7 +1158,8 @@ Features List
 
 .cipherdemo img {
   width: 100%;
-  display: inline-block; }
+  display: inline-block;
+  margin: 1.5 rem auto; }
 
 .feature-icon {
   display: inline-block;
@@ -1421,7 +1432,11 @@ Download Now
 Footer
 ========================================================================== */
 footer {
-  padding: 20px 0; }
+  padding: 20px 0;
+  background-color: #FAFAFA;
+  box-shadow: 16px 0px 0px 0px rgba(50, 50, 50, 0.3);
+  width: 100%;
+  display: block; }
 
 footer p {
   color: #c7cacc;
@@ -1445,7 +1460,8 @@ footer li {
   float: left;
   padding-top: 80px;
   margin-right: 5%;
-  font-size: 16px;
+  font-size: 20px;
+  line-height: 40px;
   list-style: none;
   text-transform: uppercase;
   font-weight: 400; }
@@ -1464,6 +1480,8 @@ footer li:last-child {
 .footer_cta h2 {
   margin: 2rem 0 0 0;
   text-align: center; }
+.footer_cta.circles {
+  margin-bottom: 30px; }
 
 footer .socialIcons {
   margin: 90px 0 0 0; }
