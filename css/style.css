@@ -760,18 +760,20 @@ Buttons
   .learn-btn.orange, .download-btn.orange {
     background-color: #f9bb3c; }
   .learn-btn.form-btn, .download-btn.form-btn {
-    padding: 10px 25px;
-    font-size: 18px;
-    margin: 5px; }
+    border: 2px solid #df4e5e; }
+    .learn-btn.form-btn form input, .download-btn.form-btn form input {
+      border: 2px solid #df4e5e; }
+    .learn-btn.form-btn:hover, .download-btn.form-btn:hover {
+      border: 2px solid #CB293C; }
 
-.learn-btn:hover, .download-btn:hover, .learn-btn:focus, .download-btn:focus, .learn-btn:active, .download-btn:active {
+.learn-btn:hover, .download-btn:hover, .learn-btn:focus, .download-btn:focus, .learn-btn:active, .download-btn:active, .form-btn:hover, .form-btn:active, .form-btn:focus {
   border-color: #f9bb3c;
   color: #FAFAFA;
   background-color: #CB293C;
   text-decoration: none;
   box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2);
   transition-delay: 0s; }
-  .learn-btn:hover.orange, .download-btn:hover.orange, .learn-btn:focus.orange, .download-btn:focus.orange, .learn-btn:active.orange, .download-btn:active.orange {
+  .learn-btn:hover.orange, .download-btn:hover.orange, .learn-btn:focus.orange, .download-btn:focus.orange, .learn-btn:active.orange, .download-btn:active.orange, .form-btn:hover.orange, .form-btn:active.orange, .form-btn:focus.orange {
     background-color: #f5c70f; }
 
 .read-more-btn {
@@ -1042,14 +1044,24 @@ section {
     margin: 2rem;
     display: inline-block;
     max-width: 90%; }
-  .about_us .large_p h2 {
-    font-size: 2.1rem; }
+  .about_us p {
+    font-size: 25px;
+    line-height: 40px;
+    font-family: 'gothamRdLight', sans-serif; }
+  .about_us .description {
+    padding-top: 50px; }
+    .about_us .description h2 {
+      font-family: 'gothamRdMedium', sans-serif; }
+    .about_us .description span {
+      font-family: 'gothamRdBook', sans-serif; }
 
 .circles_intro {
   padding: 100px 0 100px 0; }
   .circles_intro img {
     width: 100%;
     margin: 50px 0 0 0; }
+  .circles_intro .shape_description {
+    margin-left: 50px; }
 
 /* ==========================================================================
 Custom Slider Controls (Flickity)
@@ -1133,8 +1145,6 @@ Features Slider
     padding: 2rem 0 3rem 0; }
   .description ul {
     margin: 3rem 0 3rem 2rem; }
-  .description li {
-    font-size: 2rem; }
 
 .stats img {
   max-width: 80%;
@@ -1499,7 +1509,7 @@ Download Now
 Footer
 ========================================================================== */
 footer {
-  padding: 20px 0;
+  padding: 20px 0 0 0;
   background-color: #FAFAFA;
   box-shadow: 16px 0px 0px 0px rgba(50, 50, 50, 0.3);
   width: 100%;
@@ -1577,7 +1587,8 @@ form input {
   width: 200px;
   display: inline-block;
   float: left;
-  margin: 10px 19px 29px 19px; }
+  margin: 10px;
+  padding: 3px; }
 
 .form {
   height: 100%;
@@ -1704,11 +1715,11 @@ Nav Overlay
   -webkit-transform: translate3d(0, 0, 0);
   transform: translate3d(0, 0, 0); }
 
-.campfire {
+.campfire_wrapper {
   position: fixed;
   right: 0;
-  top: 25%;
-  width: 175px;
+  top: 20%;
+  width: 190px;
   height: 64px;
   border-top-left-radius: 20px;
   border-bottom-left-radius: 20px;
@@ -1718,7 +1729,7 @@ Nav Overlay
   transition-delay: 0.2s;
   box-shadow: 0 7px 10px 0 rgba(0, 0, 0, 0.26);
   background-color: #df4e5e; }
-  .campfire h3 {
+  .campfire_wrapper h3 {
     line-height: 22px;
     float: right;
     margin-right: 3px; }
@@ -1735,6 +1746,10 @@ Waypoints
 .delay-05s {
   -webkit-animation-delay: 0.5s;
   animation-delay: 0.5s; }
+
+.delay-03s {
+  -webkit-animation-delay: 0.3s;
+  animation-delay: 0.3s; }
 
 .delay-1s {
   -webkit-animation-delay: 1s;

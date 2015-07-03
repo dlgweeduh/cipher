@@ -98,3 +98,8 @@ $('a[href*=#]:not([href=#])').click(function() {
 		}
 	}
 });
+
+$('#contactForm').submit(function () {
+ sendContactForm();
+ return false;
+});

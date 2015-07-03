@@ -6,7 +6,7 @@
         padding-top: 1px;
         margin-right: 5%;
     }
-
+}
     @media screen and (max-width:991px){
         .feature-1,.feature-2{margin-bottom:50px;}
         .device{display:none;}
@@ -52,9 +52,6 @@
                 background-position: 90% 0;        
             }    
         } 
-        .campfire {
-            display: none;
-        }
     }
     @media screen and (max-width:465px){
         .hero-content {
@@ -69,7 +66,7 @@
             }
             .card, .dialog {
                 min-width: 100%;
-                min-height: 100%;
+                min-height: 513px;
                 vertical-align: top;
                 background-color: $grey50;
                 box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
@@ -105,5 +102,23 @@
                 }
             }
         }
+        .campfire_wrapper {
+            display: none;
+        }
+        .socialIcon {
+            width: 40px;
+            margin: 10px auto;
+        }
+        .socialIcon_wrap {
+            width: 90%;
+            margin: 0 auto;
+        }
+        form input {
+            height: 35px;
+            width: 95%;
+            display: inline-block;
+            float: left;
+            margin: 5px auto;  
+            padding: 3px;
+        }
     }
-}

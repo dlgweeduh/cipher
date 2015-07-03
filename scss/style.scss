@@ -843,13 +843,17 @@ Buttons
       background-color: $color1;
     } 
     &.form-btn {
-      padding: 10px 25px; 
-      font-size: 18px;  
-      margin: 5px;
+      border: 2px solid $colorCTA;
+      form input {
+          border: 2px solid $colorCTA;
+      }
+      &:hover {
+          border: 2px solid $colorCTAdark;
+      }
     }
 }
 
-.learn-btn:hover, .download-btn:hover, .learn-btn:focus, .download-btn:focus, .learn-btn:active, .download-btn:active,  {
+.learn-btn:hover, .download-btn:hover, .learn-btn:focus, .download-btn:focus, .learn-btn:active, .download-btn:active, .form-btn:hover, .form-btn:active, .form-btn:focus   {
     border-color: $color1;
     color: $grey50;
     background-color: $colorCTAdark;
@@ -1176,17 +1180,29 @@ section {
       display: inline-block;
       max-width: 90%;
     }
-    .large_p {
-      h2 {
-        font-size: 2.1rem;
-      }
+    p {
+      font-size: 25px;
+      line-height: 40px;
+      font-family: 'gothamRdLight', sans-serif;
     }  
+    .description {
+      padding-top: 50px;
+      h2 {
+        font-family: 'gothamRdMedium', sans-serif;
+      }
+      span {
+        font-family: 'gothamRdBook', sans-serif;
+      }
+    }
 }
 .circles_intro {
   padding: 100px 0 100px 0;
   img {
     width: 100%;
     margin: 50px 0 0 0;
+  }
+  .shape_description {
+    margin-left: 50px;
   }
 }
 
@@ -1278,7 +1294,6 @@ Features Slider
       margin: 3rem 0 3rem 2rem;
     }
     li {
-      font-size: 2rem;
     }
 }
 .stats {
@@ -1575,7 +1590,6 @@ Profiles
 .socialIcon {
   width: 40px;
   margin: 15px 15px 15px 25px;
-
 }
 .social_icon_wrap {
   margin: 0 auto;
@@ -1683,7 +1697,7 @@ Download Now
 Footer
 ========================================================================== */
 footer {
-    padding: 20px 0; 
+    padding: 20px 0 0 0; 
     background-color: $grey50;
     box-shadow: 16px 0px 0px  0px rgba(50, 50, 50, 0.3);
     width: 100%;  
@@ -1799,12 +1813,17 @@ form input {
   width: 200px;
   display: inline-block;
   float: left;
-  margin: 10px 19px 29px 19px;  
-
+  margin: 10px;  
+  padding: 3px;
+  &:hover, &:active, &:focus {
+      // border: 2px solid $colorCTAdark;
+      // border-color: $colorCTAdark;
+  }
 }
 .form {
   height: 100%;
   margin: 2rem auto;
+  // input[type="text"] {  width: 275px; height: 18px; }
   .form_wrapper {
     background-color: $color2;
     border-radius: 10px;
@@ -1941,11 +1960,11 @@ Nav Overlay
     -webkit-transform: translate3d(0, 0, 0);
     transform: translate3d(0, 0, 0); 
 }
-.campfire { 
+.campfire_wrapper { 
   position: fixed; 
   right: 0; 
-  top: 25%; 
-  width: 175px;
+  top: 20%; 
+  width: 190px;
   height: 64px;
   border-top-left-radius: 20px;
   border-bottom-left-radius: 20px;
@@ -1955,6 +1974,7 @@ Nav Overlay
   transition-delay: 0.2s;
   box-shadow: 0 7px 10px 0 rgba(0, 0, 0, 0.26);
   background-color: #df4e5e;
+    
   h3 {
     line-height: 22px;
     float: right;
@@ -1974,6 +1994,9 @@ Waypoints
 .delay-05s {
     -webkit-animation-delay: 0.5s;
     animation-delay: 0.5s; }
+.delay-03s {
+    -webkit-animation-delay: 0.3s;
+    animation-delay: 0.3s; }    
 
 .delay-1s {
     -webkit-animation-delay: 1s;
