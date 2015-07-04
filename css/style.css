@@ -779,7 +779,6 @@ Buttons
 .read-more-btn {
   display: inline-block;
   color: #000;
-  text-transform: uppercase;
   font-weight: 400;
   transition: box-shadow 0.2s cubic-bezier(0.4, 0, 0.2, 1);
   transition-delay: 0.2s;
@@ -1472,7 +1471,6 @@ Screenshots
 
 .screenshots figcaption p {
   margin-bottom: 0;
-  text-transform: uppercase;
   font-weight: 400; }
 
 .screenshots figcaption .caption-content {
@@ -1540,7 +1538,6 @@ footer li {
   font-size: 20px;
   line-height: 40px;
   list-style: none;
-  text-transform: uppercase;
   font-weight: 400; }
 
 footer li a {
@@ -1658,7 +1655,6 @@ Nav Overlay
   background-color: #f9bb3c;
   color: #fff;
   text-shadow: 0.5px 0.5px rgba(0, 0, 0, 0.26);
-  text-transform: uppercase;
   font-family: "gothamRdBold", sans-serif;
   font-size: 15px;
   transition: box-shadow 0.2s cubic-bezier(0.4, 0, 0.2, 1);
