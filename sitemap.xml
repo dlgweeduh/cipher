@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" 
+  xmlns:image="http://www.google.com/schemas/sitemap-image/1.1" 
+  xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
+  <url> 
+    <loc>http://www.projectcipher.io/index.html</loc> 
+    <image:image>
+       <image:loc>http://projectcipher.io.s3.amazonaws.com/cipherBCard.jpg</image:loc> 
+    </image:image>
+
+    <video:video>     
+      <video:player_loc allow_embed="yes" autoplay="ap=1">
+        https://www.youtube.com/watch?v=B5TjVRvDZxk
+      </video:player_loc>
+      <video:thumbnail_loc>
+        http://projectcipher.io/pics/vidShot3.jpg
+      </video:thumbnail_loc>
+      <video:title>Cipher | Your Local Code Community</video:title>  
+      <video:description>
+        Join us in learning to code websites and apps, design products, and start an organization. Cipher Circles are free, fun, and life-changing.
+      </video:description>
+    </video:video>
+
+  </url>
+	<url>
+	  <loc>http://projectcipher.io/about.html</loc>
+	    <image:image>
+       <image:loc>http://projectcipher.io.s3.amazonaws.com/cipherBCard.jpg</image:loc> 
+    	</image:image>
+	</url>
+	<url>
+	  <loc>http://projectcipher.io/circles.html</loc>
+      <image:image>
+       <image:loc>http://projectcipher.io.s3.amazonaws.com/cipherBCard.jpg</image:loc> 
+      </image:image>    
+	</url>
+  <url>
+    <loc>http://blog.projectcipher.io</loc>
+      <image:image>
+       <image:loc>http://projectcipher.io.s3.amazonaws.com/cipherBCard.jpg</image:loc> 
+      </image:image>    
+  </url>
+
+</urlset>

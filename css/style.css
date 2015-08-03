@@ -28,6 +28,27 @@
   src: url("../fonts/GothamRounded-Medium.eot?#iefix") format("embedded-opentype"), url("../fonts/GothamRounded-Medium.woff") format("woff"), url("../fonts/GothamRounded-Medium.ttf") format("truetype"), url("../fonts/GothamRounded-Medium.svg#alex_brushregular") format("svg");
   font-weight: normal;
   font-style: normal; }
+@font-face {
+  font-family: 'cipherIconFont';
+  src: url("../fonts/icomoon.eot?jzi8jn");
+  src: url("../fonts/icomoon.eot?#iefixjzi8jn") format("embedded-opentype"), url("../fonts/icomoon.ttf?jzi8jn") format("truetype"), url("../fonts/icomoon.woff?jzi8jn") format("woff"), url("../fonts/icomoon.svg?jzi8jn#icomoon") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+[class^="icon-"], [class*=" icon-"] {
+  font-family: 'cipherIconFont';
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+.icon-cipherLogoBlack:before {
+  content: "\e600"; }
+
 /* ! normalize.css v1.0.0 | MIT License | git.io/normalize */
 /* ==========================================================================
 HTML5 display definitions
@@ -84,7 +105,7 @@ html {
 */
 html, button, input, select, textarea {
   font-family: sans-serif;
-  font-family: 'Nunito', sans-serif; }
+  font-family: "gothamRdBook", sans-serif, sans-serif; }
 
 html, body {
   overflow-x: hidden;
@@ -95,7 +116,8 @@ html, body {
 */
 body {
   margin: 0;
-  font-family: "gothamRdBook", sans-serif, sans-serif; }
+  font-family: "gothamRdBook", sans-serif, sans-serif;
+  color: #002b36 !important; }
 
 /*
 * Font Smoothing
@@ -726,6 +748,11 @@ Buttons
     box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2);
     transition-delay: 0s; }
 
+#icon_font {
+  font-size: 40px;
+  line-height: 20px;
+  vertical-align: middle; }
+
 .button.raised {
   transition: box-shadow 0.2s cubic-bezier(0.4, 0, 0.2, 1);
   transition-delay: 0.2s;
@@ -796,6 +823,11 @@ Buttons
 /* ==========================================================================
 Navigation
 ========================================================================== */
+.opaque {
+  opacity: 1.00;
+  filter: Alpha(opacity=100);
+  /* IE8 and earlier */ }
+
 .nav-toggle {
   position: absolute;
   top: 0;
@@ -1157,7 +1189,7 @@ Separatorz
 ========================================================================== */
 .separator.heatSpot {
   background-color: #31bda5;
-  color: #000000;
+  color: #002b36;
   -webkit-transition-timing-function: ease-in-out;
   transition-timing-function: ease-in-out;
   -webkit-transition-duration: 100ms;
@@ -1506,45 +1538,10 @@ Download Now
 /* ==========================================================================
 Footer
 ========================================================================== */
-footer {
-  padding: 20px 0 0 0;
-  background-color: #FAFAFA;
-  box-shadow: 16px 0px 0px 0px rgba(50, 50, 50, 0.3);
-  width: 100%;
-  display: block; }
-
-footer p {
-  color: #c7cacc;
-  font-size: 12px;
-  margin: 100px 0 0 0; }
-
-.footer-nav a {
-  color: #f9bb3c; }
-
-.footer-nav a:hover {
-  color: #31bda5; }
-
-.footer-nav span i {
-  font-size: 10px;
-  line-height: 12px;
-  vertical-align: middle;
-  padding-right: 5px;
-  color: #31bda5; }
-
-footer li {
-  float: left;
-  padding-top: 80px;
-  margin-right: 5%;
-  font-size: 20px;
-  line-height: 40px;
-  list-style: none;
-  font-weight: 400; }
-
-footer li a {
-  color: #31bda5; }
-
-footer li:last-child {
-  margin-right: 0; }
+#footer {
+  background: #2C3840; }
+  #footer h2 {
+    color: #FAFAFA; }
 
 #footerLogo {
   width: 50%;
@@ -1557,10 +1554,40 @@ footer li:last-child {
 .footer_cta.circles {
   margin-bottom: 30px; }
 
-footer .socialIcons {
-  margin: 90px 0 0 0; }
-  footer .socialIcons img {
-    width: 50px; }
+.socialIcons {
+  margin: 50px auto;
+  width: 300px; }
+  .socialIcons img {
+    width: 50px;
+    margin: 0 10px; }
+
+.global-footer {
+  background-color: #2C3840;
+  color: #dedede;
+  text-align: center;
+  margin-top: -50px;
+  overflow: hidden; }
+  .global-footer #footernav {
+    background-color: #2C3840;
+    padding-top: 50px; }
+  .global-footer .subnavtitle {
+    font-family: "gothamRdBold", sans-serif;
+    color: #f9bb3c;
+    text-align: left; }
+  .global-footer li {
+    list-style: none;
+    text-align: left;
+    color: grey; }
+  .global-footer a {
+    color: #999;
+    font-size: 16px; }
+  .global-footer a:hover {
+    color: #fff;
+    text-decoration: none; }
+  .global-footer .copyright h5 {
+    color: #999; }
+  .global-footer p {
+    font-size: 22px; }
 
 #form1 {
   background-color: #31bda5; }
@@ -1641,7 +1668,7 @@ Nav Overlay
 .overlay ul li:last-child {
   margin-right: 0px; }
 
-.overlay ul li i {
+.overlay ul li i, .overlay ul li span {
   display: block;
   margin-bottom: 10px;
   font-size: 40px;

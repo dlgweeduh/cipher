@@ -1,9 +1,4 @@
 @media screen and (max-width: 991px) {
-  footer li {
-    float: left;
-    padding-top: 1px;
-    margin-right: 5%; } }
-@media screen and (max-width: 991px) {
   .feature-1, .feature-2 {
     margin-bottom: 50px; }
 
@@ -35,14 +30,6 @@
     max-width: 300px;
     min-width: 75%; } }
 @media screen and (max-width: 640px) {
-  footer li {
-    display: block;
-    text-align: left;
-    padding: 20px 0;
-    border-bottom: dashed 1px #c7cacc;
-    margin-right: 0 !important;
-    float: none; }
-
   nav {
     margin-top: 40px; }
 

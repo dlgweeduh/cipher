@@ -70,7 +70,7 @@ html {
 */
 html, button, input, select, textarea {
     font-family: sans-serif;
-    font-family: 'Nunito', sans-serif;
+    font-family: $bookfont, sans-serif;
 }
 html, body {
     overflow-x: hidden;
@@ -83,6 +83,7 @@ html, body {
 body {
     margin: 0;
     font-family: $bookfont, sans-serif;
+    color: $darktext !important;
 }
 
 /*
@@ -792,7 +793,7 @@ Buttons
           text-decoration: none;
           box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2);
           transition-delay: 0s;
-      }        
+      } 
     }    
       &:hover, &:focus, &:active {
           background-color: $color2d;
@@ -802,6 +803,11 @@ Buttons
           transition-delay: 0s;
       }
 }
+#icon_font {
+  font-size: 40px;
+  line-height: 20px;  
+  vertical-align: middle;    
+}   
 
     .button.raised {
       transition: box-shadow 0.2s cubic-bezier(0.4, 0, 0.2, 1);
@@ -886,6 +892,10 @@ Buttons
 /* ==========================================================================
 Navigation
 ========================================================================== */
+.opaque {
+    opacity: 1.00;
+    filter: Alpha(opacity=100); /* IE8 and earlier */
+}
 .nav-toggle {
     position: absolute;
     top: 0;
@@ -981,7 +991,7 @@ Hero
 .hero-content h1 {
     margin: 200px 0 25px 0;
     font-weight: 300;
-    font-size: 6em; 
+    font-size: 6em;   
     font-family: $boldfont;
     &.about {
 
@@ -1696,50 +1706,57 @@ Download Now
 /* ==========================================================================
 Footer
 ========================================================================== */
-footer {
-    padding: 20px 0 0 0; 
-    background-color: $grey50;
-    box-shadow: 16px 0px 0px  0px rgba(50, 50, 50, 0.3);
-    width: 100%;  
-    display: block;
+// footer {
+//     padding: 20px 0 0 0; 
+//     background-color: $grey50;
+//     box-shadow: 16px 0px 0px  0px rgba(50, 50, 50, 0.3);
+//     width: 100%;  
+//     display: block;
+//   }
+
+// footer p {
+//     color: #c7cacc;
+//     font-size: 12px;
+//     margin: 100px 0 0 0; }
+
+// footer ul {
+// }
+// .footer-nav a {
+//   color: $color1;
+// }
+// .footer-nav a:hover {
+//   color: $color3;
+// }
+// .footer-nav span {
+//   line-height: 12px;
+//   vertical-align: middle;
+//   padding-right: 5px;
+//   color: $color2;
+// }
+
+// footer li {
+//     float: left;
+//     padding-top: 80px;    
+//     margin-right: 5%;
+//     font-size: 20px;
+//     line-height: 40px;
+//     list-style: none;
+//     // text-transform: uppercase;
+//     font-weight: 400; }
+
+// footer li a {
+//     color: $color2; }
+
+// footer li:last-child {
+//     margin-right: 0; }
+
+#footer {
+  background: #2C3840;
+  h2 {
+    color: $grey50;
   }
-
-footer p {
-    color: #c7cacc;
-    font-size: 12px;
-    margin: 100px 0 0 0; }
-
-footer ul {
-}
-.footer-nav a {
-  color: $color1;
-}
-.footer-nav a:hover {
-  color: $color2;
-}
-.footer-nav span i {
-  font-size: 10px;
-  line-height: 12px;
-  vertical-align: middle;
-  padding-right: 5px;
-  color: $color2;
 }
 
-footer li {
-    float: left;
-    padding-top: 80px;    
-    margin-right: 5%;
-    font-size: 20px;
-    line-height: 40px;
-    list-style: none;
-    // text-transform: uppercase;
-    font-weight: 400; }
-
-footer li a {
-    color: $color2; }
-
-footer li:last-child {
-    margin-right: 0; }
 
 #footerLogo {
     width: 50%; 
@@ -1755,13 +1772,62 @@ footer li:last-child {
       margin-bottom: 30px;
     }
 }
-footer .socialIcons {
-  margin: 90px 0 0 0;
+.socialIcons {
+  margin: 50px auto;
+  width: 300px;
   img {
     width: 50px;
+    margin: 0 10px;
   }
 }
 
+.global-footer {
+   background-color: $darkbg;
+   color: #dedede;
+   text-align: center;
+   margin-top: -50px;
+   overflow:hidden;
+
+   #footernav {
+      background-color: $darkbg;
+      padding-top:50px;
+   }
+
+    .subnavtitle{
+      font-family: $boldfont;
+      color:$color1;
+      text-align:left;
+    }
+
+
+   li{
+      list-style:none;
+      text-align:left;
+      color:grey;
+      }   
+   
+   a{
+      color:#999;
+      font-size:16px;
+   }
+
+   a:hover{
+      color:#fff;
+      text-decoration:none;
+   }
+
+   .copyright {
+    h4 {
+      color: #999;
+      text-align: left;
+    }
+   }
+
+   p {
+      font-size: 22px;
+   }
+  
+}
 #form1 {
   background-color: $color2;
   input {
@@ -1879,7 +1945,7 @@ Nav Overlay
 .overlay ul li:last-child {
     margin-right: 0px; }
 
-.overlay ul li i {
+.overlay ul li i, .overlay ul li span  {
     display: block;
     margin-bottom: 10px;
     font-size: 40px; 
@@ -1973,14 +2039,12 @@ Nav Overlay
   transition: box-shadow 0.2s cubic-bezier(0.4, 0, 0.2, 1);
   transition-delay: 0.2s;
   box-shadow: 0 7px 10px 0 rgba(0, 0, 0, 0.26);
-  background-color: #df4e5e;
-    
+  background-color: #df4e5e;  
   h3 {
     line-height: 22px;
     float: right;
     margin-right: 3px; 
   }
-
 }
 /* ==========================================================================
 Waypoints
