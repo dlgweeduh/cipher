@@ -39,15 +39,15 @@
             background-color: $grey50;
         }   
         .showcase {
-            background: url("../pics/conesusdusk.jpg") no-repeat center center;
+            background: url("../pics/conesusdusk.jpg")no-repeat center center scroll;
             background-size: cover; 
             &.about {
-                background: url("../pics/tahoedusk.jpg") no-repeat center center;
+                background: url("../pics/tahoedusk.jpg") no-repeat center center scroll;
                 background-size: cover; 
                 background-position: 30% 0;
             }
             &.circles {
-                background: url("../pics/windfarmdusk.jpg") no-repeat center center;
+                background: url("../pics/windfarmdusk.jpg") no-repeat center center scroll;
                 background-size: cover; 
                 background-position: 90% 0;        
             }    
